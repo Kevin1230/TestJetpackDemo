@@ -17,5 +17,6 @@ public class BlankViewModel extends ViewModel {
 
     public void add() {
         mNumber.setValue(mNumber.getValue() + 1);
+        //铁素体
     }
 }
