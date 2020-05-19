@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynavugation"
+    app:startDestination="@id/one">
+
+    <fragment
+        android:id="@+id/one"
+        android:name="com.example.testjetpack.BlankFragment"
+        android:label="blank_fragment"
+        tools:layout="@layout/blank_fragment" >
+        <action
+            android:id="@+id/action_one_to_two"
+            app:destination="@id/two"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/two"
+        android:name="com.example.testjetpack.ScenoFragment"
+        android:label="sceno_fragment"
+        tools:layout="@layout/sceno_fragment" >
+        <action
+            android:id="@+id/action_two_to_one"
+            app:destination="@id/one" />
+    </fragment>
+</navigation>
