@@ -18,5 +18,7 @@ public class BlankViewModel extends ViewModel {
     public void add() {
         mNumber.setValue(mNumber.getValue() + 1);
         //测试我在这里又增加了一行代码//测试我在这里又增加了一行代码//测试我在这里又增加了一行代码
+        //测试我在这里又增加了一行代码//测试我在这里又增加了一行代码//测试我在这里又增加了一行代码
+        //测试我在这里又增加了一行代码//测试我在这里又增加了一行代码//测试我在这里又增加了一行代码
     }
 }
